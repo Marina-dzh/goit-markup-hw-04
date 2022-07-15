@@ -12,6 +12,7 @@
     --btn: #F5F4FA;
     --contact-footer:rgba(255, 255, 255, 0.6);
     --border-client: #AFB1B8;
+    --bcg-footer-logo: rgba(255, 255, 255, 0.1);
 
     --indent: 30px;
     --features: 4;
@@ -58,7 +59,7 @@ body {
     margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
-    /* outline: 1px solid yellow;  */
+    outline: 1px solid yellow;
 }
 
 .sect-padd{
@@ -382,6 +383,39 @@ border-radius: 50%;
 }
 
 .contact-footer:hover,.contact-footer:focus { color: var(--acc);}
+
+.bold{
+    text-transform: uppercase;
+}
+.connect{
+    display:flex;
+    align-items: baseline;
+    gap: 70px;
+}
+
+.social-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.item-footer{
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    background-color: var(--bcg-footer-logo);
+    --color4:var(--bcg)
+    }
+
+.item-footer:hover,
+.item-footer:focus {
+    background-color: var(--acc);
+    --color4: var(--bcg);
+}
 
 /* PORTFOLIO */
 .flex-filter{
